@@ -13,5 +13,9 @@ public class Enseignement {
 		nbrTP = seanceTP;
 		nbrCM = coursCM;
 	}
+	public int getNbHeuresTD() {
+		return nbrTD;
+	}
+	
 
 }
