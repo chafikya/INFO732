@@ -13,6 +13,15 @@ public class Test {
 		Etudiant d = new Etudiant("Gianni");
 		//création des Enseignements
 		Enseignement maths= new Enseignement("Maths", 5, 5, 5);
+		//ajout etudiant à un Enseignement
+		maths.addEtudiant(a);
+		maths.addEtudiant(b);
+		maths.addEtudiant(c);
+		
+		//ajoout d'un devoir à l'enseignement
+		
+		maths.addDevoir("titre", "sujet");
+		
 		//System.out.println(maths.getNbHeuresTD());
 		Cours cour1 = new CM(sem1);
 		Cours cour2 = new TD(sem1);
@@ -22,7 +31,7 @@ public class Test {
 		Cours cour6 = new CM(sem1);
 		Cours cour7 = new CM(sem1);
 		Cours cour8 = new CM(sem1);
-		System.out.println("il y a "+ sem1.getChargeTravail() +" cours dans la semaine");
+		System.out.println("il y a "+ sem1.getChargeTravail()[0] +" cours dans la semaine dont " + sem1.getChargeTravail()[1]+ " CM "+ sem1.getChargeTravail()[2] +" TD " + sem1.getChargeTravail()[3] +" TP");
 		
 		// 
 	}

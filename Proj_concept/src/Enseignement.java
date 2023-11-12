@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 public class Enseignement {
 	ArrayList<Etudiant> liste_etudiants = new ArrayList<Etudiant>();
-	String nom;
+	private ArrayList<Devoir> liste_devoir = new ArrayList<Devoir>();
+	 private String nom;
 	int nbrTD;
 	int nbrTP;
 	int nbrCM;
@@ -24,10 +25,23 @@ public class Enseignement {
 		
 	}
 	
+	public String getNom() {
+		return nom;
+	}
+	
 	public float getMoyenne(Etudiant et) {
 		float p;
-		p=0.5;
+		p=1/3;
 		return p;
+	}
+	
+	public void addDevoir(String titre, String sujet) {
+		Devoir devoir = new Devoir(this, sujet, titre);
+		liste_devoir.add(devoir);
+		for (Etudiant et: liste_etudiants) {
+			et.receivDevoir(devoir);
+		}
+		
 	}
 	
 

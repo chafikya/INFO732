@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Controle {
-	ArrayList<Mois> mois = new ArrayList<Mois>();
+	ArrayList<Note> notes = new ArrayList<Note>();
 	float coef;
 	
 	public Controle(float un_coef) {

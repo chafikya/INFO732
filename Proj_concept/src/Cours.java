@@ -1,5 +1,11 @@
 
 public abstract class Cours {
-	public Cours() {}
+	String type;
+	public Cours() {
+		
+	}
+	public String getType() {
+		return type;
+	}
 
 }
