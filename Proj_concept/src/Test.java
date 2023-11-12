@@ -18,7 +18,7 @@ public class Test {
 		maths.addEtudiant(b);
 		maths.addEtudiant(c);
 		// on créee des controles
-		maths.addControle(2, "5 juillet 2005");
+		maths.addControle(2, "5 juillet 2005");// coef, date
 		maths.addControle(2, "5 janvier 230");
 		maths.addControle(2, "5 mai 1968");
 		maths.addControle(2, "5 fevrier 2001");
